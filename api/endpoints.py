@@ -10,8 +10,8 @@ import uuid
 
 router = APIRouter()
 
-UPLOAD_DIR = "backend/uploads"
-OUTPUT_DIR = "backend/generated"
+UPLOAD_DIR = "data/uploads"
+OUTPUT_DIR = "data/generated"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 

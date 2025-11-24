@@ -48,10 +48,10 @@ from fastapi.staticfiles import StaticFiles
 import os
 
 # Ensure directories exist
-os.makedirs("backend/generated", exist_ok=True)
+os.makedirs("data/generated", exist_ok=True)
 
 # Mount static files
-app.mount("/generated", StaticFiles(directory="backend/generated"), name="generated")
+app.mount("/generated", StaticFiles(directory="data/generated"), name="generated")
 
 @app.get("/")
 def read_root():
